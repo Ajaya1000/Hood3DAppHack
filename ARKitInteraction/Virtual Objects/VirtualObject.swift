@@ -20,7 +20,7 @@ class VirtualObject: SCNReferenceNode {
     var allowedAlignment: ARRaycastQuery.TargetAlignment {
         if modelName == "sticky note" {
             return .any
-        } else if modelName == "painting" {
+        } else if (modelName == "painting" || modelName == "smartTV") {
             return .vertical
         } else {
             return .horizontal
